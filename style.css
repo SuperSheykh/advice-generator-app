@@ -40,16 +40,15 @@ h1 {
 .drawing {
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   gap: 5px;
    padding: 0.6em;
 }
 .line {
    height: 1px;
-   width: 125px;
+   width: 100%;
    background-color: hsl(193, 38%, 86%);
 }
 .pause {
-   /* width: 3px; */
    height: 15px;
    border-right: 5px solid hsl(193, 38%, 86%);
    border-radius: 3px;
@@ -71,6 +70,8 @@ h1 {
 }
 
 #button:hover {
+   box-shadow: hsl(150, 100%, 66%) 0px 0px 30px,
+      hsl(150, 100%, 66%) 0px 0px 12px;
 }
 
 .dice {
@@ -78,11 +79,24 @@ h1 {
    height: 50%;
    border-radius: 5px;
    background-color: hsl(218, 23%, 16%);
+   padding: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.dice-line {
+   display: flex;
+   justify-content: space-between;
+}
+.middle-line {
+   justify-content: center;
 }
 .dot {
    width: 5px;
    height: 5px;
    background-color: hsl(150, 100%, 66%);
+   /* border: 1px solid red; */
+   border-radius: 50%;
 }
 .colors {
    background-color: hsl(193, 38%, 86%);
